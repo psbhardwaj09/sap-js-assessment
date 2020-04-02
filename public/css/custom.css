@@ -1,0 +1,203 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+.api-data {
+    margin:10px;
+    margin-top: 30px;
+}
+.api-data .sort-by{
+    width: 100%;
+}
+
+.api-data label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.mb-3 {
+    margin-bottom: 16px;
+}
+.api-data .input-group {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+.api-data .form-control {
+    display: block;
+    width: 90%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+.api-data .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.api-data .input-group-append {
+    margin-left: -1px;
+}
+.api-data .btn-submit {
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 38px;
+}
+
+.api-data select {
+    width: 100%;
+    height: 30px;
+}
+.api-data .fliter{
+    width: 100%;
+}
+
+.api-data .api-data__bg{
+    background: #000000;
+    padding: 12px 8px 0 8px;
+    box-sizing: border-box;
+}
+.api-data .api-data__block .card .img{
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.api-data .api-data__block{
+    margin-bottom: 12px;
+}
+.api-data .api-data__block .card{
+    border: none;
+    position: relative;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.api-data .api-data__block .card .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.6;
+}
+.api-data .api-data__block .card .overlay .title{
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    line-height: 30px;
+}
+.api-data .api-data__block .card .overlay .id{
+    font-size: 10px;
+    color: #fff;
+    margin: 0;
+    line-height: 18px;
+}
+
+.api-data .api-data__block .card .block{
+    padding: 7px 10px;
+}
+
+.api-data__block .data{
+    background: #312c2c;
+    padding: 15px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.api-data__block .data ul{
+    padding: 0;
+    margin: 0;
+}
+.api-data__block .data ul li{
+    font-size: 10px;
+    list-style: none;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+.api-data__block .data ul li:not(:last-child){
+    border-bottom: 1px solid #504949;
+}
+.api-data__block .data ul li span{
+    width: 40%;
+}
+.api-data__block .data ul li span.info{
+    color: #ec8624;
+    text-transform: capitalize;
+    width: 60%;
+    text-align: right;
+}
+
+/* Layout css */
+.space-between{
+    justify-content: space-between;
+}
+.page-container{
+    max-width: 100%;
+}
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-data {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+/* Media query > mobile */
+@media (min-width:992px) {
+    .api-data__block .data ul li{
+        font-size: 12px;
+    }
+    .api-data__block .data ul li span{
+        width: 30%;
+    }
+    .api-data__block .data ul li span.info{
+        width: 70%;
+        text-align: right;
+    }
+}
+@media (min-width: 576px){
+    .page-container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .api-data .fliter{
+        width: auto;
+    }
+    .api-data .sort-by{
+        width: auto;
+    }
+    .api-data select {
+        margin-top: 34px;
+        min-width: 160px;
+    }
+    .api-data .input-group .form-control {
+        width: auto;
+    }
+    .flex-data {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .api-data .api-data__block .card .overlay .id{
+        font-size: 13px;
+    }
+    .api-data .api-data__block .card .overlay .title{
+        font-size: 18px;
+    }
+}
