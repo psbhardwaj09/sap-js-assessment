@@ -2,94 +2,48 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>React Assessment</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/custom.css">
-  <script src="./js/index.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/index.js"></script>
 </head>
 
 <body>
-  <section class="api-data">
-    <div class="page-container">
-      <div class="flex-box space-between">
-        <div class="fliter">
-          <label for="search">Search by Name</label>
-          <div class="input-group mb-3">
-            <input type="text" id="search" class="form-control" placeholder="Search">
-            <div class="input-group-append">
-              <button class="btn btn-submit" type="submit">Search</button>
+  <div class="container flex-box">
+    <!-- Left Section -->
+    <section class="left-section" id="filters">
+      <h5>Filters</h5>
+    </section>
+    <!-- Right Section -->
+    <section class="right-section">
+      <div id="selectedFilters">
+        <h5>Selected Filters</h5>
+      </div>
+        <div class="flex-box space-between pb-3">
+          <div class="fliter">
+            <label for="search">Search by Name</label>
+            <div class="input-group round-border-left">
+              <input type="text" id="search" class="form-control" placeholder="Search">
+              <button class="btn-search" type="submit">Search</button>
             </div>
           </div>
-        </div>
-        <div class="fliter">
-          <div class="sort-by mb-3">
-            <select>
+          <div class="sort-fliter">
+            <select id="sort-filter">
               <option value="">Sort by ID</option>
-              <option value="Ascending">Ascending</option>
-              <option value="Descending">Descending</option>
+              <option value="ascending">Ascending</option>
+              <option value="descending">Descending</option>
             </select>
           </div>
         </div>
+
+      <div class="page-container">
+        <div class="flex-box" id="charList"></div>
       </div>
-    </div>
-
-    <div class="page-container">
-      <div class="api-data__bg">
-        <div class="flex-box" id="charList">
-<!-- 
-          <div class="flex-data">
-            <div class="api-data__block">
-              <div class="card">
-                <img class="img" src="img/sunrise.jpg" alt="APi Data image">
-                <div class="overlay">
-                  <div class="block">
-                    <h3 class="title">Hunter's Father</h3>
-                    <p class="id"> id: 111 - created 2 years ago </p>
-                  </div>
-                </div>
-              </div>
-              <div class="data">
-                <ul>
-                  <li><span>Status</span><span class="info">Alive</span></li>
-                  <li><span>Species</span><span class="info">Human</span></li>
-                  <li><span>Gender</span><span class="info">Female</span></li>
-                  <li><span>Origin</span><span class="info">Post - Apocalyptic Earth</span></li>
-                  <li><span>Last Location</span><span class="info">Post - Apocalyptic Earth</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-data">
-            <div class="api-data__block">
-              <div class="card img-fluid">
-                <img class="img" src="img/sunrise.jpg" alt="APi Data image">
-                <div class="overlay">
-                  <div class="block">
-                    <h5 class="title">Hunter's Father</h5>
-                    <p class="id"> id: 111 - created 2 years ago </p>
-                  </div>
-                </div>
-              </div>
-              <div class="data">
-                <ul>
-                  <li><span>Status</span><span class="info">Alive</span></li>
-                  <li><span>Species</span><span class="info">Human</span></li>
-                  <li><span>Gender</span><span class="info">Female</span></li>
-                  <li><span>Origin</span><span class="info">Post - Apocalyptic Earth</span></li>
-                  <li><span>Last Location</span><span class="info">Post - Apocalyptic Earth</span></li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-      </div>
-    </div>
-    <section>
+      <section>
+  </div>
 </body>
 
 </html>
